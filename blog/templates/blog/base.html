@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    <h2>TechBuzz</h2>
+      <p>TechBuzz - Reporting on the business of technology, startups, venture capital funding, and Silicon Valley.</p>
+  </div>
+</body>
+</html>
